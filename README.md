@@ -50,3 +50,8 @@ FLUJO DEL PROGRAMA
 
 ESTRUCTURA DEL PROGRAMA Y MÓDULOS NECESARIOS
 
+int main(int argc, char **argv); Función principal, recoge el archivo con el mapa por parámetro
+
+void collect_map(); Recoge la información del fichero en una estructura
+
+void traverse_rows(); Recorre las filas en busca de 
