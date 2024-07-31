@@ -52,6 +52,17 @@ ESTRUCTURA DEL PROGRAMA Y MÓDULOS NECESARIOS
 
 int main(int argc, char **argv); Función principal, recoge el archivo con el mapa por parámetro
 
-void collect_map(); Recoge la información del fichero en una estructura
+map collect_map_info(argv[1]); Recoge la información del fichero en una estructura
 
-void traverse_rows(); Recorre las filas en busca de 
+map collect_map_content(argv[1], map_info); Lee el contenido del mapa
+
+void find_square(map_info); Encuentra e imprime el cuadrado más grande
+
+``` java
+............  000000000000
+.......x....  000000011111
+............  000000011111
+....x...x...  000011123333
+......x.....  000011234444
+............  000011234444
+```
